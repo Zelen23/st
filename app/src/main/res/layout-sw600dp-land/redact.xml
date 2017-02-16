@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:id="@+id/bRed"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignRight="@+id/editNumber"
+        android:layout_alignEnd="@+id/editNumber" />
+
+    <TextView
+        android:text="Фамилия"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView6"
+        android:textSize="20dp"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/editFamily"
+        android:layout_alignStart="@+id/editFamily" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editFamily"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName" />
+
+    <TextView
+        android:text="vk.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:layout_above="@+id/editFamily"
+        android:layout_alignLeft="@+id/editNumber"
+        android:layout_alignStart="@+id/editNumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editUlr"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editNumber"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/editName" />
+
+    <TextView
+        android:text="Имя"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="Номер"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+
+</RelativeLayout>

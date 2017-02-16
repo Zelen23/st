@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    android:id="@+id/tabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/journals" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/users" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+
+                <ExpandableListView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:id="@+id/exp_lw"
+                    />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_below="@+id/exp_lw"
+                    android:layout_marginTop="10dp"
+                   />
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/editText2"
+                    android:layout_below="@id/editText"
+                    android:backgroundTint="#60a8ff"
+                    android:backgroundTintMode="screen" />
+
+                <GridView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/gr_time"
+                    android:layout_below="@id/editText2" />
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker"
+                    android:layout_below="@id/spinner"
+                    android:layout_toRightOf="@id/gr_time"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/gr_time"
+                    />
+
+                <Button
+                    android:text="Button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button4"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/numberPicker"
+                    android:layout_toRightOf="@+id/gr_time"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tab4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Поиск:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_comm"
+                    />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/search_user"
+                    android:layout_alignParentLeft="false"
+                    android:layout_toRightOf="@+id/sp_param"
+                    android:layout_marginTop="50dp" />
+
+                <Button
+                    android:text="OK"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/button5"
+                    android:layout_below="@id/search_user"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_param"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="50dp" />
+
+                <GridView
+                    android:numColumns="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gv_search"
+                    android:layout_below="@+id/button5" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

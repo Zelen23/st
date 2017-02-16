@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <GridView
+
+        android:numColumns="7"
+        android:id="@+id/gridView"
+        android:gravity="center"
+        android:columnWidth="50sp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="250sp"
+        android:layout_below="@+id/gridView2"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:textFilterEnabled="false"
+        android:nestedScrollingEnabled="false"
+        android:transcriptMode="disabled"
+        android:drawSelectorOnTop="true"
+        android:state_selected="true"/>
+    <GridView
+
+        android:numColumns="7"
+        android:id="@+id/gridView2"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:background="#52b0ff"
+        android:transcriptMode="disabled"
+        android:textAlignment="inherit"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/button2"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_above="@+id/gridView2"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignTop="@+id/button" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_toLeftOf="@+id/button2"
+
+        />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Date:"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button"
+        android:visibility="invisible" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_front"
+        android:layout_below="@+id/gridView"
+        android:layout_centerHorizontal="true"
+        android:focusable="true" />
+
+
+
+
+</RelativeLayout>

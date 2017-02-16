@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:longClickable="true">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/time"
+        android:layout_gravity="left"
+        android:gravity="left|center_vertical" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:id="@+id/name"
+        android:gravity="left|center_vertical"
+        />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edSum"
+        android:text=""
+        />
+
+    <CheckBox
+        android:text="CheckedTextView"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:id="@+id/checkbox"
+        android:layout_gravity="left"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+
+        />
+
+
+</LinearLayout>
