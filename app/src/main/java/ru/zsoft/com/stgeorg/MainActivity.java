@@ -245,60 +245,60 @@ public class MainActivity extends AppCompatActivity {
 
                             switch (cl_.get(i)){
                                 case 1:
-                                    color = Color.rgb(222,241,232);
+                                    color = Color.rgb(221,255,221);
                                     break;
                                 case 2:
-                                    color =Color.rgb(222,241,232);
+                                    color =Color.rgb(221,255,221);
                                     break;
                                 case 3:
-                                    color =Color.rgb(222,241,232);
+                                    color =Color.rgb(221,255,221);
                                     break;
 
                                 case 4:
-                                    color =Color.rgb(181,223,201);
+                                    color =Color.rgb(183,242,217);
                                     break;
                                 case 5:
-                                    color =Color.rgb(181,223,201);
+                                    color =Color.rgb(183,242,217);
                                     break;
                                 case 6:
-                                    color =Color.rgb(181,223,201);
+                                    color =Color.rgb(183,242,217);
                                     break;
 
                                 case 7:
-                                    color =Color.rgb(113,193,151);
+                                    color =Color.rgb(139,214,197);
                                     break;
                                 case 8:
-                                    color =Color.rgb(113,193,151);
+                                    color =Color.rgb(139,214,197);
                                     break;
                                 case 9:
-                                    color =Color.rgb(113,193,151);
+                                    color =Color.rgb(139,214,197);
                                     break;
 
                                 case 10:
-                                    color =Color.rgb(78,163,148);
+                                    color =Color.rgb(112,207,169);
                                     break;
                                 case 11:
-                                    color =Color.rgb(78,163,148);
+                                    color =Color.rgb(112,207,169);
                                     break;
                                 case 12:
-                                    color =Color.rgb(78,163,148);
+                                    color =Color.rgb(112,207,169);
                                     break;
                                 // подправиить
                                 case 13:
-                                    color =Color.rgb(73,158,122);
+                                    color =Color.rgb(66,193,168);
                                     break;
                                 case 14:
-                                    color =Color.rgb(73,158,122);
+                                    color =Color.rgb(66,193,168);
                                     break;
 
                                 case 15:
-                                    color =Color.rgb(233,84,88);
+                                    color =Color.rgb(209,80,80);
                                     break;
                                 case 16:
-                                    color =Color.rgb(233,84,88);
+                                    color =Color.rgb(209,80,80);
                                     break;
                                 case 18:
-                                    color =Color.rgb(233,84,88);
+                                    color =Color.rgb(209,80,80);
                                     break;
 
 
